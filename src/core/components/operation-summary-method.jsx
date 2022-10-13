@@ -18,8 +18,26 @@ export default class OperationSummaryMethod extends PureComponent {
       method,
     } = this.props
 
+    // change the color of the method span by translating method to badgeType
+    let badgeType = "default"
+    switch(method) {
+        case "put":
+            badgeType = "warning"
+            break
+        case "del":
+        case "delete":
+            badgeType = "error"
+            break
+        case "get":
+            badgeType = "success"
+            break
+        case "post":
+            badgeType = "info"
+            break
+    }
+
     return (
-      <span className="opblock-summary-method">{method.toUpperCase()}</span>
+      <span className={`badge badge-sm badge-ol badge-${badgeType}`}>{method.toUpperCase()}</span>
     )
   }
 }

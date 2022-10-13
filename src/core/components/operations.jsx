@@ -56,6 +56,7 @@ export default class Operations extends React.Component {
     const OperationContainer = getComponent("OperationContainer", true)
     const OperationTag = getComponent("OperationTag")
     const operations = tagObj.get("operations")
+    console.log("OPERATIONS", operations)
     return (
       <OperationTag
         key={"operation-" + tag}

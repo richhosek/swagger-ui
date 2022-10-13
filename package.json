@@ -96,7 +96,8 @@
     "url-parse": "^1.5.8",
     "xml": "=1.0.1",
     "xml-but-prettier": "^1.0.1",
-    "zenscroll": "^4.0.2"
+    "zenscroll": "^4.0.2",
+    "bootstrap": "^5.2.2"
   },
   "devDependencies": {
     "@babel/cli": "=7.16.8",

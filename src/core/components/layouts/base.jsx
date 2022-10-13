@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+// import "bootstrap/dist/css/bootstrap.min.css"
 
 export default class BaseLayout extends React.Component {
 
